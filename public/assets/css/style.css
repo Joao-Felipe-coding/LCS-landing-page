@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Teko");
+
+:root {
+  --primary-color: #00213e;
+  --hover-link: #006c34e6;
+  --background-color: #006B34;
+  --tertiary-color: #5593CB;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background-color);
+}
+
+/* Ao clicar em um link scroll: */
+html {
+	scroll-padding-top: 8rem;
+	scroll-behavior: smooth;
+	/* Esconder a barra de rolagem mas permitir scroll */
+	scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Edge */
+}
+
+/* Início */
+.home {
+  background: 
+    linear-gradient(to bottom, rgba(0, 58, 28, 0.199) 60%, var(--background-color) 100%),
+    url(../images/photo-bg.png) no-repeat center center/cover;
+  min-height: 80vh;
+  position: relative;
+}
+

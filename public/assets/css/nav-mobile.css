@@ -1,0 +1,195 @@
+@media (min-width: 450px) {
+	.nav-mobile {
+	  display: none;
+	}
+  }
+  
+  @media (max-width: 450px) {
+	.nav-mobile > .inp {
+	  display: none;
+	}
+  
+	.subscribe {
+	  background: #6f9de2;
+	  border-radius: 30px;
+	  padding: 0 30px;
+	  margin: 10px -15px 10px;
+	  height: 32px;
+	  width: auto;
+	  color: rgb(0, 0, 0);
+	  text-decoration: none;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  font-weight: bold;
+	}
+  
+	.nav-mobile {
+	  color: #D8D8D8;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  backdrop-filter: blur(10px);
+	  opacity: 1;
+	  margin-right: 1rem;
+	  padding: 3px 20px;
+	  border-radius: 30px;
+	  display: flex;
+	  align-items: center;
+	  height: 2.5rem;
+	  width: calc(100% - 2rem);
+	  position: fixed;
+	  top: 1rem;
+	  left: 1rem;
+	  right: 1rem;
+	  cursor: pointer;
+	  justify-content: space-between;
+	  z-index: 9999; /* Garante que a navbar fique acima de tudo */
+	}
+  
+	.arrow {
+	  height: 34%;
+	  aspect-ratio: 1;
+	  margin-block: auto;
+	  position: relative;
+	  display: flex;
+	  justify-content: center;
+	  transition: all 0.3s;
+	}
+  
+	.arrow::after,
+	.arrow::before {
+	  content: "";
+	  position: absolute;
+	  background-color: rgb(0, 0, 0);
+	  height: 100%;
+	  width: 2.5px;
+	  border-radius: 500px;
+	  transform-origin: bottom;
+	}
+  
+	.arrow::after {
+	  transform: rotate(35deg) translateX(-0.5px);
+	}
+  
+	.arrow::before {
+	  transform: rotate(-35deg) translateX(0.5px);
+	}
+  
+	.nav-mobile > .inp:checked + .arrow {
+	  transform: rotateX(180deg);
+	}
+  
+	.menu-container {
+	  background-color: #D8D8D8;
+	  color: #000000;
+	  border-radius: 10px;
+	  position: absolute;
+	  text-align: center;
+	  width: 50%;
+	  right: 0;
+	  top: 130%;
+	  overflow: hidden;
+	  clip-path: inset(0% 0% 0% 0% round 10px);
+	  transition: all 0.4s;
+	}
+  
+	.menu-list {
+	  margin-right: 10px;
+	  margin-left: 10px;
+	  --delay: 0.4s;
+	  --trdelay: 0.15s;
+	  padding: 8px 10px;
+	  border-radius: inherit;
+	  transition: background-color 0.2s 0s;
+	  position: relative;
+	  transform: translateY(30px);
+	  opacity: 0;
+	}
+  
+	.menu-list:not(:last-child)::after {
+	  content: "";
+	  position: absolute;
+	  bottom: 0;
+	  height: 1px;
+	  background-color: rgba(0, 0, 0, 0.2);
+	}
+  
+	.menu-list::after {
+	  content: "";
+	  position: absolute;
+	  top: 100%;
+	  left: 50%;
+	  transform: translateX(-50%);
+	  height: 1px;
+	  width: 95%;
+	}
+  
+	.inp:checked ~ .menu-container,
+	.inp:checked ~ a {
+	  clip-path: inset(0% 0% 100% 100% round 10px);
+	}
+  
+	.inp:not(:checked) ~ .menu-container .menu-list {
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  
+	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(1) {
+	  transition: transform 0.4s var(--delay), opacity 0.4s var(--delay);
+	}
+  
+	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(2) {
+	  transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 1)),
+		opacity 0.4s calc(var(--delay) + (var(--trdelay) * 1));
+	}
+  
+	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(3) {
+	  transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 2)),
+		opacity 0.4s calc(var(--delay) + (var(--trdelay) * 2));
+	}
+  
+	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(4) {
+	  transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 3)),
+		opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
+	}
+  
+	.bar-inp {
+	  -webkit-appearance: none;
+	  appearance: none;
+	  display: none;
+	  visibility: hidden;
+	}
+  
+	.bar {
+	  display: flex;
+	  height: 50%;
+	  width: 20px;
+	  flex-direction: column;
+	  gap: 3px;
+	}
+  
+	.bar-list {
+	  --transform: -25%;
+	  display: block;
+	  width: 100%;
+	  height: 3px;
+	  border-radius: 50px;
+	  background-color: #D8D8D8;
+	  transition: all 0.4s;
+	  position: relative;
+	}
+  
+	.inp:not(:checked) ~ .bar > .top {
+	  transform-origin: top right;
+	  transform: translateY(var(--transform)) rotate(-45deg);
+	}
+  
+	.inp:not(:checked) ~ .bar > .middle {
+	  transform: translateX(-50%);
+	  opacity: 0;
+	}
+  
+	.inp:not(:checked) ~ .bar > .bottom {
+	  transform-origin: bottom right;
+	  transform: translateY(calc(var(--transform) * -1)) rotate(45deg);
+	}
+  }
