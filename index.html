@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/assets/css/style.css">
+  <link rel="stylesheet" href="./public/assets/css/nav-desktop.css">
+  <link rel="stylesheet" href="./public/assets/css/nav-mobile.css">
+  <title>LCS </title>
+</head>
+
+<body>
+  <!-- Navegação -->
+  <nav>
+    <input type="checkbox" id="theme-mode" class="mode" hidden>
+    <div class="nav-desktop">
+      <div class="wrap">
+        <input checked type="radio" id="rd-Início" name="radio" class="rd-1" hidden>
+        <label for="rd-Início" class="label" style="--index: 0;" onclick="scrollToSection('Início')">
+          <span>Início</span>
+        </label>
+        <input type="radio" id="rd-Sobre" name="radio" class="rd-2" hidden>
+        <label for="rd-Sobre" class="label" style="--index: 1;" onclick="scrollToSection('Sobre')">
+          <span>Sobre nós</span>
+        </label>
+        <input type="radio" id="rd-QuemVai" name="radio" class="rd-3" hidden>
+        <label for="rd-QuemVai" class="label" style="--index: 2;" onclick="scrollToSection('QuemVai')">
+          <span>Serviços</span>
+        </label>
+        <input type="radio" id="rd-FAQ" name="radio" class="rd-4" hidden>
+        <label for="rd-FAQ" class="label" style="--index: 3;" onclick="scrollToSection('FAQ')">
+          <span>Contato</span>
+        </label>
+        <div class="bar"></div>
+        <div class="slidebar"></div>
+      </div>
+    </div>
+    <label class="nav-mobile">
+      <a href="#" class="subscribe" onclick="openModal()">Inscreva-se</a>
+      <input type="checkbox" checked class="inp">
+      <div class="bar">
+        <span class="top bar-list"></span>
+        <span class="middle bar-list"></span>
+        <span class="bottom bar-list"></span>
+      </div>
+      <section class="menu-container">
+        <div class="menu-list" onclick="scrollToSection('Início')">Início</div>
+        <div class="menu-list" onclick="scrollToSection('Sobre')">Sobre</div>
+        <div class="menu-list" onclick="scrollToSection('QuemVai')">Quem vai</div>
+        <div class="menu-list" onclick="scrollToSection('FAQ')">FAQ</div>
+      </section>
+    </label>
+  </nav>
+
+  <!-- Início -->
+  <section class="home" id="home">
+
+  </section>
+
+  <main class="main-container">
+
+  </main>
+
+  <script src="./src/assets/js/main.js"></script>
+  <script src="./src/assets/js/nav.js"></script>
+</body>
+
+</html>
