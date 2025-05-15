@@ -30,6 +30,9 @@
 		background-color: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(10px);
 		opacity: 1;
+		pointer-events: auto;
+		transform: none;
+		transition: none;
 		margin-right: 1rem;
 		padding: 3px 20px;
 		border-radius: 30px;
@@ -44,6 +47,12 @@
 		cursor: pointer;
 		justify-content: space-between;
 		z-index: 9999; /* Garante que a navbar fique acima de tudo */
+	}
+
+	.nav-mobile.nav-visible {
+		opacity: 1;
+		pointer-events: auto;
+		transform: none;
 	}
 
 	.arrow {

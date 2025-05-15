@@ -37,27 +37,35 @@ function debounce(func, wait) {
 
 // Função para atualizar a seção ativa
 function updateActiveSection() {
-  // Evita atualizar durante o scroll suave
   if (isScrolling) return;
 
   const sections = document.querySelectorAll("main > section");
   const radios = document.querySelectorAll(".wrap input[type='radio']");
-  let activeSectionId = null;
+  let closestSection = null;
+  let minDistance = Number.POSITIVE_INFINITY;
+  const offset = 100; // Compensa a navbar fixa
 
-  // Encontra a seção mais próxima do centro da janela
+  // Se estiver no topo da página, ativa a aba Início
+  if (window.scrollY < 400) {
+    for (const radio of radios) {
+      radio.checked = radio.id === 'rd-Inicio';
+    }
+    return;
+  }
+
   for (const section of sections) {
     const rect = section.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    // Verifica se a seção está no centro da janela
-    if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
-      activeSectionId = section.id;
+    const distance = Math.abs(rect.top - offset);
+    if (distance < minDistance) {
+      minDistance = distance;
+      closestSection = section;
     }
   }
 
-  // Atualiza o rádio apenas se uma seção válida for encontrada
-  if (activeSectionId) {
+  if (closestSection) {
+    const activeId = closestSection.id;
     for (const radio of radios) {
-      radio.checked = radio.id === `rd-${activeSectionId}`;
+      radio.checked = radio.id === `rd-${activeId}`;
     }
   }
 }

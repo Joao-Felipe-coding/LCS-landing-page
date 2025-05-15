@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./public/assets/css/nav-desktop.css">
   <link rel="stylesheet" href="./public/assets/css/nav-mobile.css">
   <link rel="stylesheet" href="./public/assets/css/loading.css">
+  <link rel="stylesheet" href="./public/assets/css/home.css">
   <title>LCS</title>
 </head>
 
@@ -27,24 +28,24 @@
     <input type="checkbox" id="theme-mode" class="mode" hidden>
     <div class="nav-desktop">
       <div class="wrap">
-        <input checked type="radio" id="rdInicio" name="radio" class="rd-1" hidden>
-        <label for="rdInicio" class="label" style="--index: 0;" onclick="scrollToSection('Início')">
+        <input checked type="radio" id="rd-Inicio" name="radio" class="rd-1" hidden>
+        <label for="rd-Inicio" class="label" style="--index: 0;" onclick="scrollToSection('Inicio')">
           <span>Início</span>
         </label>
         <input type="radio" id="rd-Sobre" name="radio" class="rd-2" hidden>
         <label for="rd-Sobre" class="label" style="--index: 1;" onclick="scrollToSection('Sobre')">
           <span>Sobre nós</span>
         </label>
-        <input type="radio" id="rdServicos" name="radio" class="rd-3" hidden>
-        <label for="rdServicos" class="label" style="--index: 2;" onclick="scrollToSection('Servicos')">
+        <input type="radio" id="rd-Servicos" name="radio" class="rd-3" hidden>
+        <label for="rd-Servicos" class="label" style="--index: 2;" onclick="scrollToSection('Servicos')">
           <span>Serviços</span>
         </label>
-        <input type="radio" id="rdContato" name="radio" class="rd-4" hidden>
-        <label for="rdContato" class="label" style="--index: 3;" onclick="scrollToSection('Contato')">
+        <input type="radio" id="rd-Contato" name="radio" class="rd-4" hidden>
+        <label for="rd-Contato" class="label" style="--index: 3;" onclick="scrollToSection('Contato')">
           <span>Contato</span>
         </label>
-        <input type="radio" id="rdFAQ" name="radio" class="rd-5" hidden>
-        <label for="rdFAQ" class="label" style="--index: 4;" onclick="scrollToSection('FAQ')">
+        <input type="radio" id="rd-FAQ" name="radio" class="rd-5" hidden>
+        <label for="rd-FAQ" class="label" style="--index: 4;" onclick="scrollToSection('FAQ')">
           <span>FAQ</span>
         </label>
         <div class="bar"></div>
@@ -54,7 +55,7 @@
     <label class="nav-mobile">
       <a href="https://wa.me/554399999999" class="whatsapp">
         <img src="./public/assets/images/whatsapp-icon.png" alt="" width="35" height="35">
-        (43) 99999-9999
+        Nosso Whatsapp
       </a>
       <input type="checkbox" checked class="inp">
       <div class="bar">
@@ -68,23 +69,44 @@
         <div class="menu-list" onclick="scrollToSection('Servicos')">Serviços</div>
         <div class="menu-list" onclick="scrollToSection('Contato')">Contato</div>
         <div class="menu-list" onclick="scrollToSection('FAQ')">FAQ</div>
-
       </section>
     </label>
   </nav>
 
   <!-- Início -->
-  <div class="home-container">
-    <section class="home" id="Inicio">
-      <img class="logo-home" src="./public/assets/images/logo.png" alt="Logo">
-      <img  class="logo-home-vertical" src="./public/assets/images/logo-vertical.png" alt="Logo Vertical"/>
-    </section>
-  </div>
+  <section class="home" id="Inicio">
+    <img class="logo-home" src="./public/assets/images/logo.png" alt="Logo">
+    <img class="logo-home-vertical" src="./public/assets/images/logo-vertical.png" alt="Logo Vertical" />
+    <div class="scroll-down-indicator">
+      <svg class="arrow-down" width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 4L24 28L44 4" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      <span class="scroll-text">Role para baixo</span>
+    </div>
+  </section>
 
   <main class="main-container">
     <!-- Sobre nós -->
     <section class="about" id="Sobre">
-
+      <div class="photo-about">
+        <img src="./public/assets/images/photo-about.png" alt="Sobre nós">
+      </div>
+      <div class="text-about">
+        <h1>Quem somos nós?</h1>
+        <p>
+          Somos uma equipe especializada em <strong>garantir que os direitos dos nossos clientes sejam
+            respeitados</strong>. Atuamos com excelência na obtenção de <strong>indenizações</strong> e
+          <strong>benefícios previdenciários</strong>, oferecendo uma
+          assessoria completa, transparente e comprometida com resultados reais.
+          Com ampla experiência nas áreas civil, previdenciária e securitária, nossa missão é <strong>facilitar o acesso
+            à justiça</strong> para pessoas que enfrentam situações difíceis, como acidentes, invalidez ou negativa de
+          seguros e benefícios. <br>
+          Acreditamos que cada caso é único e, por isso, <strong>oferecemos um atendimento humanizado e
+            personalizado</strong>, com total sigilo e dedicação. Nosso compromisso é defender seus direitos com
+          <strong> ética, clareza e eficiência, do início ao fim do processo</strong>. Na LCS, você não está sozinho.
+          Conte conosco para lutar por aquilo que é seu por direito.
+        </p>
+      </div>
     </section>
 
     <!-- Serviços -->
@@ -105,6 +127,7 @@
 
   <script src="./src/assets/js/loading.js"></script>
   <script src="./src/assets/js/nav.js"></script>
+  <script src="./src/assets/js/about-animate.js"></script>
 </body>
 
 </html>
