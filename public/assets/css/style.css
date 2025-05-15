@@ -4,7 +4,7 @@
 :root {
 	--primary-color: #00213e;
 	--hover-link: #006c34e6;
-	--background-color: #00213e;
+	--background-color: #ffffff;
 }
 
 * {
@@ -32,97 +32,50 @@ body::-webkit-scrollbar {
 }
 
 /* Início */
-.home {
+.home-container {
 	background: linear-gradient(
 			to bottom,
-			rgba(0, 58, 28, 0.199) 10%,
+			rgba(0, 0, 0, 0.192) 80%,
 			var(--background-color) 100%
 		), url(../images/photo-bg.png) no-repeat center center / cover;
 	min-height: 100vh;
 	position: relative;
 }
 
-#loading-screen {
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: var(--background-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.5s;
-}
-#loading-screen img {
-  max-width: 260px;
-  width: 60vw;
-  height: auto;
-  margin-bottom: 32px;
-  display: none;
-}
-#loading-screen .logo-desktop {
-  display: block;
-}
-#loading-screen .logo-mobile {
-  display: none;
-}
-@media (max-width: 600px) {
-  #loading-screen .logo-desktop {
-    display: none;
-  }
-  #loading-screen .logo-mobile {
-    display: block;
-    max-width: 180px;
-    width: 80vw;
-  }
-}
-.loading-bar-container {
-  width: 180px;
-  height: 8px;
-  background: rgba(0, 0, 0, 0.24);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-top: 8px;
-  position: relative;
-}
-.loading-bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 40px;
-  /* background: linear-gradient(90deg, #006c34 0%, #5593CB 100%); */
-	background: #fff;
-  border-radius: 4px;
-  animation: loading-bar-pingpong 1.2s cubic-bezier(0.4,0,0.2,1) infinite alternate;
-	animation-delay: 0.5s;
-}
-@keyframes loading-bar-pingpong {
-  0% { left: 0; }
-  100% { left: 140px; }
-}
-@keyframes loading-bar-move {
-  0% { left: -40px; }
-  100% { left: 180px; }
-}
-#loading-screen.hide {
+.logo-home {
+	display: block;
+	max-width: 50vh;
+	margin: auto;
+	padding-top: 20vh;
   opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s;
+  animation: logoFadeIn 2s forwards;
+  animation-delay: 4s;
 }
-#loading-screen.hide img,
-#loading-screen.hide .loading-bar-container {
-  opacity: 0;
-  transition: opacity 0.4s, transform 0.5s;
+@keyframes logoFadeIn {
+  from { opacity: 0; transform: translateX(0);}
+  to { opacity: 1; transform: translateX(0);}
 }
-#loading-screen.hide .loading-bar-container {
-  transform: scaleX(0.2);
-  transition: opacity 0.4s, transform 0.5s cubic-bezier(0.4,0,0.2,1);
+
+.logo-home-vertical {
+	display: none;
 }
-#loading-screen.hide .loading-bar {
-  width: 0 !important;
-  transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+
+@media (max-width: 520px) {
+	.logo-home {
+		display: none;
+	}
+
+	.logo-home-vertical{
+		display: block;
+    margin: auto;
+    padding-top: 40%;
+		max-width: 45vw;
+    opacity: 0;
+    animation: logoVerticalFadeIn 2s forwards;
+    animation-delay: 4s;
+	}
+  @keyframes logoVerticalFadeIn {
+    from { opacity: 0; transform: translateX(0);}
+    to { opacity: 1; transform: translateX(0);}
+  }
 }
