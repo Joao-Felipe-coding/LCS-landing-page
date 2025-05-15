@@ -1,7 +1,7 @@
 // Tela de loading
 window.addEventListener('DOMContentLoaded', () => {
   const loadingScreen = document.getElementById('loading-screen');
-  const MIN_LOADING_TIME = 3000; // 3 segundos
+  const MIN_LOADING_TIME = 3500; // 3 segundos
   const HIDE_ANIMATION_TIME = 600; // tempo da animação de saída
   const start = Date.now();
 
