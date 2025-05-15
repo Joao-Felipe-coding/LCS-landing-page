@@ -2,10 +2,9 @@
 @import url("https://fonts.googleapis.com/css?family=Teko");
 
 :root {
-  --primary-color: #00213e;
-  --hover-link: #006c34e6;
-  --background-color: #006B34;
-  --tertiary-color: #5593CB;
+	--primary-color: #00213e;
+	--hover-link: #006c34e6;
+	--background-color: #00213e;
 }
 
 * {
@@ -34,10 +33,11 @@ body::-webkit-scrollbar {
 
 /* Início */
 .home {
-  background: 
-    linear-gradient(to bottom, rgba(0, 58, 28, 0.199) 60%, var(--background-color) 100%),
-    url(../images/photo-bg.png) no-repeat center center/cover;
-  min-height: 80vh;
-  position: relative;
+	background: linear-gradient(
+			to bottom,
+			rgba(0, 58, 28, 0.199) 10%,
+			var(--background-color) 100%
+		), url(../images/photo-bg.png) no-repeat center center / cover;
+	min-height: 100vh;
+	position: relative;
 }
-

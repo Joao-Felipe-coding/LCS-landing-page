@@ -1,4 +1,4 @@
-@media (min-width: 451px) {
+@media (min-width: 521px) {
 	.mode + .nav-desktop,
 	.mode:checked + .nav-desktop {
 	  --color-pure: #fff;
@@ -144,12 +144,11 @@
 	}
 	.slidebar {
 	  border-radius: calc(var(--round) - var(--p-y));
-	  background: #6f9de2;
+	  background: #5593CB;
 	  transition: transform 0.5s cubic-bezier(0.33, 0.83, 0.99, 0.98),
 		background-color 0.5s ease;
 	}
-  
-	.rd-1:checked ~ .bar,
+  	.rd-1:checked ~ .bar,
 	.rd-1:checked ~ .slidebar {
 	  transform: translateX(0);
 	}
@@ -165,9 +164,13 @@
 	.rd-4:checked ~ .slidebar {
 	  transform: translateX(300%);
 	}
+	.rd-5:checked ~ .bar,
+	.rd-5:checked ~ .slidebar {
+	  transform: translateX(400%);
+	}
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 520px) {
 	.wrap {
 	  display: none; /* Esconde a navbar */
 	}

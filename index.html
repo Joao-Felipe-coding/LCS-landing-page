@@ -16,28 +16,35 @@
     <input type="checkbox" id="theme-mode" class="mode" hidden>
     <div class="nav-desktop">
       <div class="wrap">
-        <input checked type="radio" id="rd-Início" name="radio" class="rd-1" hidden>
-        <label for="rd-Início" class="label" style="--index: 0;" onclick="scrollToSection('Início')">
+        <input checked type="radio" id="rdInicio" name="radio" class="rd-1" hidden>
+        <label for="rdInicio" class="label" style="--index: 0;" onclick="scrollToSection('Início')">
           <span>Início</span>
         </label>
         <input type="radio" id="rd-Sobre" name="radio" class="rd-2" hidden>
         <label for="rd-Sobre" class="label" style="--index: 1;" onclick="scrollToSection('Sobre')">
           <span>Sobre nós</span>
         </label>
-        <input type="radio" id="rd-QuemVai" name="radio" class="rd-3" hidden>
-        <label for="rd-QuemVai" class="label" style="--index: 2;" onclick="scrollToSection('QuemVai')">
+        <input type="radio" id="rdServicos" name="radio" class="rd-3" hidden>
+        <label for="rdServicos" class="label" style="--index: 2;" onclick="scrollToSection('Servicos')">
           <span>Serviços</span>
         </label>
-        <input type="radio" id="rd-FAQ" name="radio" class="rd-4" hidden>
-        <label for="rd-FAQ" class="label" style="--index: 3;" onclick="scrollToSection('FAQ')">
+        <input type="radio" id="rdContato" name="radio" class="rd-4" hidden>
+        <label for="rdContato" class="label" style="--index: 3;" onclick="scrollToSection('Contato')">
           <span>Contato</span>
+        </label>
+        <input type="radio" id="rdFAQ" name="radio" class="rd-5" hidden>
+        <label for="rdFAQ" class="label" style="--index: 4;" onclick="scrollToSection('FAQ')">
+          <span>FAQ</span>
         </label>
         <div class="bar"></div>
         <div class="slidebar"></div>
       </div>
     </div>
     <label class="nav-mobile">
-      <a href="#" class="subscribe" onclick="openModal()">Inscreva-se</a>
+      <a href="https://wa.me/554399999999" class="whatsapp">
+        <img src="./public/assets/images/whatsapp-icon.png" alt="" width="35" height="35">
+        (43) 99999-9999
+      </a>
       <input type="checkbox" checked class="inp">
       <div class="bar">
         <span class="top bar-list"></span>
@@ -45,21 +52,41 @@
         <span class="bottom bar-list"></span>
       </div>
       <section class="menu-container">
-        <div class="menu-list" onclick="scrollToSection('Início')">Início</div>
+        <div class="menu-list" onclick="scrollToSection('Inicio')">Início</div>
         <div class="menu-list" onclick="scrollToSection('Sobre')">Sobre</div>
-        <div class="menu-list" onclick="scrollToSection('QuemVai')">Quem vai</div>
+        <div class="menu-list" onclick="scrollToSection('Servicos')">Serviços</div>
+        <div class="menu-list" onclick="scrollToSection('Contato')">Contato</div>
         <div class="menu-list" onclick="scrollToSection('FAQ')">FAQ</div>
+
       </section>
     </label>
   </nav>
 
   <!-- Início -->
-  <section class="home" id="home">
+  <section class="home" id="Inicio">
 
   </section>
 
   <main class="main-container">
+    <!-- Sobre nós -->
+    <section class="about" id="Sobre">
 
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="Servicos">
+
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="Contato">
+
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="FAQ">
+
+    </section>
   </main>
 
   <script src="./src/assets/js/main.js"></script>

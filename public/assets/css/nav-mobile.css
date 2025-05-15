@@ -1,22 +1,23 @@
-@media (min-width: 450px) {
+@media (min-width: 520px) {
 	.nav-mobile {
 	  display: none;
 	}
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 520px) {
 	.nav-mobile > .inp {
 	  display: none;
 	}
   
-	.subscribe {
-	  background: #6f9de2;
+	.whatsapp {
+	  background: #00c93c;
 	  border-radius: 30px;
-	  padding: 0 30px;
+	  padding: 0 1.2rem 0 0.5rem;
 	  margin: 10px -15px 10px;
+		gap: 5px;
 	  height: 32px;
 	  width: auto;
-	  color: rgb(0, 0, 0);
+	  color: #fff;
 	  text-decoration: none;
 	  display: flex;
 	  align-items: center;
@@ -149,6 +150,11 @@
   
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(4) {
 	  transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 3)),
+		opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
+	}
+
+	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(5) {
+	  transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 4)),
 		opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
 	}
   
