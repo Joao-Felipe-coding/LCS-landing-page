@@ -2,8 +2,8 @@
 .home {
 	background: linear-gradient(
 			to bottom,
-			rgba(0, 0, 0, 0.171) 10%,
-			rgba(0, 0, 0, 0.433) 70%,
+			rgba(0, 0, 0, 0.055) 10%,
+			rgba(0, 0, 0, 0.219) 70%,
 			rgba(0, 0, 0, 0.875) 100%
 		), url(../images/photo-bg.png) no-repeat center center / cover;
 	min-height: 100vh;
@@ -16,7 +16,7 @@
 	display: block;
 	max-width: 50vh;
 	margin: auto;
-	padding-top: 18vh;
+	padding-top: 25vh;
 	opacity: 0;
 	animation: logoFadeIn 2s forwards;
 	animation-delay: 4s;
