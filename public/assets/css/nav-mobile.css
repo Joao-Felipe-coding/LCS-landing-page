@@ -1,14 +1,12 @@
+/* =========================
+   NAV-MOBILE - Navegação mobile
+   Estilos para navegação principal em telas pequenas
+========================= */
 @media (min-width: 520px) {
-	.nav-mobile {
-		display: none;
-	}
+	.nav-mobile { display: none; }
 }
-
 @media (max-width: 520px) {
-	.nav-mobile > .inp {
-		display: none;
-	}
-
+	/* Botão WhatsApp fixo */
 	.whatsapp {
 		background: var(--whatsapp-green);
 		color: var(--white);
@@ -24,7 +22,7 @@
 		justify-content: center;
 		font-weight: bold;
 	}
-
+	/* Barra superior mobile */
 	.nav-mobile {
 		color: var(--gray-menu);
 		background-color: rgba(0, 0, 0, 0.5);
@@ -46,15 +44,14 @@
 		right: 1rem;
 		cursor: pointer;
 		justify-content: space-between;
-		z-index: 9999; /* Garante que a navbar fique acima de tudo */
+		z-index: 9999;
 	}
-
 	.nav-mobile.nav-visible {
 		opacity: 1;
 		pointer-events: auto;
 		transform: none;
 	}
-
+	/* Ícone de seta do menu */
 	.arrow {
 		height: 34%;
 		aspect-ratio: 1;
@@ -64,7 +61,6 @@
 		justify-content: center;
 		transition: all 0.3s;
 	}
-
 	.arrow::after,
 	.arrow::before {
 		content: "";
@@ -75,19 +71,10 @@
 		border-radius: 500px;
 		transform-origin: bottom;
 	}
-
-	.arrow::after {
-		transform: rotate(35deg) translateX(-0.5px);
-	}
-
-	.arrow::before {
-		transform: rotate(-35deg) translateX(0.5px);
-	}
-
-	.nav-mobile > .inp:checked + .arrow {
-		transform: rotateX(180deg);
-	}
-
+	.arrow::after { transform: rotate(35deg) translateX(-0.5px); }
+	.arrow::before { transform: rotate(-35deg) translateX(0.5px); }
+	.nav-mobile > .inp:checked + .arrow { transform: rotateX(180deg); }
+	/* Menu lateral */
 	.menu-container {
 		background-color: var(--gray-menu);
 		color: var(--black);
@@ -101,7 +88,6 @@
 		clip-path: inset(0% 0% 0% 0% round 10px);
 		transition: all 0.4s;
 	}
-
 	.menu-list {
 		margin-right: 10px;
 		margin-left: 10px;
@@ -114,7 +100,6 @@
 		transform: translateY(30px);
 		opacity: 0;
 	}
-
 	.menu-list:not(:last-child)::after {
 		content: "";
 		position: absolute;
@@ -122,7 +107,6 @@
 		height: 1px;
 		background-color: rgba(0, 0, 0, 0.2);
 	}
-
 	.menu-list::after {
 		content: "";
 		position: absolute;
@@ -132,48 +116,35 @@
 		height: 1px;
 		width: 95%;
 	}
-
 	.inp:checked ~ .menu-container,
 	.inp:checked ~ a {
 		clip-path: inset(0% 0% 100% 100% round 10px);
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list {
 		transform: translateY(0);
 		opacity: 1;
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(1) {
 		transition: transform 0.4s var(--delay), opacity 0.4s var(--delay);
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(2) {
-		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 1)),
-			opacity 0.4s calc(var(--delay) + (var(--trdelay) * 1));
+		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 1)), opacity 0.4s calc(var(--delay) + (var(--trdelay) * 1));
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(3) {
-		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 2)),
-			opacity 0.4s calc(var(--delay) + (var(--trdelay) * 2));
+		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 2)), opacity 0.4s calc(var(--delay) + (var(--trdelay) * 2));
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(4) {
-		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 3)),
-			opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
+		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 3)), opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
 	}
-
 	.inp:not(:checked) ~ .menu-container .menu-list:nth-child(5) {
-		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 4)),
-			opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
+		transition: transform 0.4s calc(var(--delay) + (var(--trdelay) * 4)), opacity 0.4s calc(var(--delay) + (var(--trdelay) * 3));
 	}
-
 	.bar-inp {
 		-webkit-appearance: none;
 		appearance: none;
 		display: none;
 		visibility: hidden;
 	}
-
 	.bar {
 		display: flex;
 		height: 50%;
@@ -181,7 +152,6 @@
 		flex-direction: column;
 		gap: 3px;
 	}
-
 	.bar-list {
 		--transform: -25%;
 		display: block;
@@ -192,17 +162,14 @@
 		transition: all 0.4s;
 		position: relative;
 	}
-
 	.inp:not(:checked) ~ .bar > .top {
 		transform-origin: top right;
 		transform: translateY(var(--transform)) rotate(-45deg);
 	}
-
 	.inp:not(:checked) ~ .bar > .middle {
 		transform: translateX(-50%);
 		opacity: 0;
 	}
-
 	.inp:not(:checked) ~ .bar > .bottom {
 		transform-origin: bottom right;
 		transform: translateY(calc(var(--transform) * -1)) rotate(45deg);

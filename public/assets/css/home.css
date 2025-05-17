@@ -1,4 +1,7 @@
-/* Início */
+/* =========================
+   HOME - Seção principal
+   Estilos para a seção inicial do site
+========================= */
 .home {
 	background: linear-gradient(
 			to bottom,
@@ -6,12 +9,15 @@
 			rgba(0, 0, 0, 0.219) 70%,
 			rgba(0, 0, 0, 0.875) 100%
 		), url(../images/photo-bg.png) no-repeat center center / cover;
-	min-height: 100dvh; /* Usar altura dinâmica da viewport para mobile moderno */
+	min-height: 100dvh; /* Altura dinâmica para mobile moderno */
 	position: relative;
-	background-attachment: fixed; /* Torna o background fixo */
+	background-attachment: fixed;
 	z-index: 1;
 }
 
+/* =========================
+   LOGO E ANIMAÇÕES
+========================= */
 .logo-home {
 	display: block;
 	max-width: 50vh;
@@ -23,51 +29,34 @@
 	position: relative;
 	z-index: 2;
 }
-
 @keyframes logoFadeIn {
-	from {
-		opacity: 0;
-		transform: translateX(0);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+	from { opacity: 0; transform: translateX(0); }
+	to { opacity: 1; transform: translateX(0); }
 }
-
 .logo-home-vertical {
 	display: none;
 }
-
 @media (max-width: 520px) {
-	.logo-home {
-		display: none;
-	}
-
+	.logo-home { display: none; }
 	.logo-home-vertical {
 		display: block;
 		margin: auto;
-		padding-top: 20%; /* Reduzido para garantir espaço para o indicador */
+		padding-top: 20%;
 		max-width: 60vw;
 		opacity: 0;
 		animation: logoVerticalFadeIn 2s forwards;
 		animation-delay: 4s;
 		z-index: 2;
 	}
-
 	@keyframes logoVerticalFadeIn {
-		from {
-			opacity: 0;
-			transform: translateX(0);
-		}
-		to {
-			opacity: 1;
-			transform: translateX(0);
-		}
+		from { opacity: 0; transform: translateX(0); }
+		to { opacity: 1; transform: translateX(0); }
 	}
 }
 
-/* indicador de scroll */
+/* =========================
+   INDICADOR DE SCROLL
+========================= */
 .scroll-down-indicator {
 	position: absolute;
 	left: 50%;
@@ -81,39 +70,20 @@
 	animation: fadeInScroll 2s 4.5s both;
 	transition: opacity 0.6s, transform 0.6s;
 }
-
 @keyframes fadeInScroll {
-	from {
-		opacity: 0;
-		transform: translateX(-50%) translateY(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(-50%) translateY(0);
-	}
+	from { opacity: 0; transform: translateX(-50%) translateY(30px); }
+	to { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
-
 .arrow-down {
 	width: 40px;
 	height: 30px;
 	animation: arrowBounce 2s infinite;
 }
-
 @keyframes arrowBounce {
-	0% {
-		transform: translateY(0);
-		opacity: 0.7;
-	}
-	50% {
-		transform: translateY(10px);
-		opacity: 1;
-	}
-	100% {
-		transform: translateY(0);
-		opacity: 0.7;
-	}
+	0% { transform: translateY(0); opacity: 0.7; }
+	50% { transform: translateY(10px); opacity: 1; }
+	100% { transform: translateY(0); opacity: 0.7; }
 }
-
 .scroll-text {
 	color: var(--white);
 	font-size: 1rem;
@@ -122,26 +92,12 @@
 	opacity: 0.8;
 	animation: scrollTextFade 2s infinite;
 }
-
 @keyframes scrollTextFade {
-	0%,
-	100% {
-		opacity: 0.8;
-	}
-	50% {
-		opacity: 1;
-	}
+	0%, 100% { opacity: 0.8; }
+	50% { opacity: 1; }
 }
-
 @media (max-width: 520px) {
-	.scroll-down-indicator {
-		bottom: 8px; /* Garante que fique sempre visível no mobile */
-	}
-	.arrow-down {
-		width: 36px;
-		height: 24px;
-	}
-	.scroll-text {
-		font-size: 0.95rem;
-	}
+	.scroll-down-indicator { bottom: 8px; }
+	.arrow-down { width: 36px; height: 24px; }
+	.scroll-text { font-size: 0.95rem; }
 }

@@ -1,4 +1,7 @@
-/* Serviços */
+/* =========================
+   SERVIÇOS - Seção principal
+   Estilos para a seção de serviços do site
+========================= */
 .services {
 	display: flex;
 	flex-direction: column;
@@ -6,6 +9,10 @@
 	justify-content: center;
 	margin: 5rem 0;
 }
+
+/* =========================
+   TÍTULOS E SUBTÍTULOS
+========================= */
 .services-title {
 	font-size: 2rem;
 	font-weight: 700;
@@ -13,8 +20,7 @@
 	text-align: center;
 	opacity: 0;
 	transform: translateY(60px);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 1.5s
-		cubic-bezier(0.77, 0, 0.175, 1);
+	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .services-title.animate {
 	opacity: 1;
@@ -23,20 +29,22 @@
 .services-subtitle {
 	margin: 1rem 0 5rem 0;
 	font-size: 16px;
-	padding: 0 7rem 0 7rem;
+	padding: 0 7rem;
 	color: var(--primary-color);
 	text-align: center;
 	font-weight: 400;
-	opacity: 0.85;
 	opacity: 0;
 	transform: translateY(60px);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 1.5s
-		cubic-bezier(0.77, 0, 0.175, 1);
+	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .services-subtitle.animate {
 	opacity: 1;
 	transform: translateY(0);
 }
+
+/* =========================
+   CARDS DE SERVIÇOS
+========================= */
 .services-cards {
 	display: flex;
 	gap: 2.5rem;
@@ -48,7 +56,7 @@
 	background: var(--white);
 	border-radius: 20px;
 	border: 1px solid var(--gray-lighter);
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.04);
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.04);
 	padding: 2rem 1.5rem 1.5rem 1.5rem;
 	width: 320px;
 	min-height: 340px;
@@ -57,16 +65,12 @@
 	align-items: center;
 	opacity: 0;
 	transform: translateY(60px);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 2s
-		cubic-bezier(0.77, 0, 0.175, 1), box-shadow 2s
-		cubic-bezier(0.77, 0, 0.175, 1);
+	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 2s cubic-bezier(0.77, 0, 0.175, 1), box-shadow 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
 .service-card:hover,
 .service-card::after {
-	transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), box-shadow 1s
-		cubic-bezier(0.77, 0, 0.175, 1);
+	transition: transform 1s cubic-bezier(0.77, 0, 0.175, 1), box-shadow 1s cubic-bezier(0.77, 0, 0.175, 1);
 }
-
 .service-card.animate {
 	opacity: 1;
 	transform: translateY(0);
@@ -88,6 +92,10 @@
 	text-align: center;
 }
 
+/* =========================
+   RESPONSIVIDADE
+   Ajustes para telas menores
+========================= */
 @media (max-width: 900px) {
 	.services-cards {
 		flex-direction: column;
@@ -104,19 +112,16 @@
 		margin-bottom: 2rem;
 		opacity: 0;
 		transform: translateY(60px);
-		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s
-			cubic-bezier(0.77, 0, 0.175, 1);
+		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 }
-
 @media (max-width: 520px) {
 	.services-title {
 		font-size: 2rem;
 		padding: 0 0.5rem;
 		opacity: 0;
 		transform: translateY(60px);
-		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s
-			cubic-bezier(0.77, 0, 0.175, 1);
+		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 	.services-subtitle {
 		font-size: 14px;
@@ -124,11 +129,9 @@
 		padding: 0 0.5rem;
 		opacity: 0;
 		transform: translateY(60px);
-		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s
-			cubic-bezier(0.77, 0, 0.175, 1);
+		transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1), transform 0.6s cubic-bezier(0.77, 0, 0.175, 1);
 	}
 }
-
 @media (min-width: 901px) {
 	.service-card:hover {
 		box-shadow: 0 6px 24px 0 rgba(0, 0, 0, 0.1);
