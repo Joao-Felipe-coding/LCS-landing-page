@@ -9,7 +9,7 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background: var(--black);
+	background: var(--white);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -36,7 +36,7 @@
 .loading-bar-container {
 	width: 180px;
 	height: 8px;
-	background: rgba(98, 98, 98, 0.24);
+	background: rgba(48, 48, 48, 0.24);
 	border-radius: 4px;
 	overflow: hidden;
 	margin-top: 8px;
@@ -48,7 +48,7 @@
 	top: 0;
 	height: 100%;
 	width: 40px;
-	background: var(--white);
+	background: linear-gradient(90deg, #006c34, #5593cb);
 	border-radius: 4px;
 	animation: loading-bar-pingpong 1.2s cubic-bezier(0.4,0,0.2,1) infinite alternate;
 	animation-delay: 0.5s;

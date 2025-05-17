@@ -47,6 +47,7 @@
 body {
 	display: block;
 	font-family: "Montserrat", sans-serif;
+	color: var(--text-strong); /* Todos os textos padrão */
 }
 
 /* Ao clicar em um link scroll: */
@@ -114,7 +115,7 @@ body::-webkit-scrollbar {
   margin-bottom: 0.5rem;
 }
 .footer-logo p {
-  color: #fff;
+  color: var(--text-strong);
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -131,7 +132,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  color: #fff;
+  color: var(--text-strong);
   font-size: 15px;
   font-weight: 500;
 }
@@ -179,7 +180,7 @@ body::-webkit-scrollbar {
 .footer-text {
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: var(--text-strong);
   font-size: 13px;
   margin-top: 2.5rem;
   letter-spacing: 0.2px;

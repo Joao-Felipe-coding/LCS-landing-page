@@ -18,7 +18,7 @@
 .contact-title {
 	font-size: 2rem;
 	font-weight: 700;
-	color: var(--accent-green);
+	color: var(--primary-color);
 	text-align: center;
 	opacity: 0;
 	transform: translateX(-60px);
@@ -32,7 +32,7 @@
 	margin: 1rem 0 4rem 0;
 	font-size: 16px;
 	padding: 0 7rem;
-	color: var(--primary-color);
+	color: var(--text-dark);
 	text-align: center;
 	font-weight: 400;
 	opacity: 0;
@@ -70,7 +70,7 @@
 }
 .contact-form h2 {
 	font-size: 1.3rem;
-	color: var(--accent-green);
+	color: var(--primary-color);
 	margin-bottom: 0.5rem;
 	font-weight: 700;
 }
@@ -166,7 +166,7 @@ textarea:focus {
 	color: var(--accent-green);
 }
 .contact-card p {
-	color: var(--primary-color);
+	color: var(--text-strong);
 }
 
 /* =========================

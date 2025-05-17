@@ -16,7 +16,7 @@
 .services-title {
 	font-size: 2rem;
 	font-weight: 700;
-	color: var(--accent-green);
+	color: var(--primary-color);
 	text-align: center;
 	opacity: 0;
 	transform: translateY(60px);
@@ -82,7 +82,7 @@
 }
 .service-card h2 {
 	font-size: 1.2rem;
-	color: var(--accent-green);
+	color: var(--primary-color);
 	margin-bottom: 1rem;
 	text-align: center;
 }
