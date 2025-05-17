@@ -6,7 +6,7 @@
 			rgba(0, 0, 0, 0.219) 70%,
 			rgba(0, 0, 0, 0.875) 100%
 		), url(../images/photo-bg.png) no-repeat center center / cover;
-	min-height: 100vh;
+	min-height: 100dvh; /* Usar altura dinâmica da viewport para mobile moderno */
 	position: relative;
 	background-attachment: fixed; /* Torna o background fixo */
 	z-index: 1;
@@ -47,7 +47,7 @@
 	.logo-home-vertical {
 		display: block;
 		margin: auto;
-		padding-top: 40%;
+		padding-top: 20%; /* Reduzido para garantir espaço para o indicador */
 		max-width: 60vw;
 		opacity: 0;
 		animation: logoVerticalFadeIn 2s forwards;
@@ -135,7 +135,7 @@
 
 @media (max-width: 520px) {
 	.scroll-down-indicator {
-		bottom: 24px;
+		bottom: 8px; /* Garante que fique sempre visível no mobile */
 	}
 	.arrow-down {
 		width: 36px;
