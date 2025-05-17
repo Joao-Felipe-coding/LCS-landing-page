@@ -5,6 +5,21 @@
 	--primary-color: #00213e;
 	--hover-link: #006c34e6;
 	--background-color: #ffffff;
+	--accent-green: #006c34;
+	--accent-blue: #5593cb;
+	--accent-blue-hover: #5594cb;
+	--text-dark: #444444;
+	--text-strong: #222222;
+	--white: #ffffff;
+	--black: #000000;
+	--gray-light: #e0e0e0;
+	--gray-lighter: #f3f3f3;
+	--gray-bg: #fafafa;
+	--gray-bg2: #f5f5f5a9;
+	--gray-placeholder: #999999;
+	--gray-menu: #d8d8d8;
+	--link-highlight: #7fffd4;
+	--whatsapp-green: #00c93c;
 }
 
 * {
@@ -204,3 +219,5 @@ footer hr {
     margin-top: 1rem;
   }
 }
+
+/* Corrigido: fechamento do arquivo */

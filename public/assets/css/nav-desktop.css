@@ -23,11 +23,11 @@
 	.nav-desktop .theme {
 	  color: var(--color-secondary);
 	  background-color: var(--color-primary);
+	  border: 1px solid var(--muted);
 	  position: relative;
 	  cursor: pointer;
 	  z-index: 9;
 	  user-select: none;
-	  border: 1px solid var(--muted);
 	  border-radius: calc(var(--round) - var(--p-y));
 	  margin-left: calc(var(--p-x) * 2);
 	  display: flex;
@@ -123,7 +123,7 @@
 	}
   
 	.wrap input[class*="rd-"]:checked + label {
-	  color: #000;
+	  color: var(--black);
 	  transition: color 0.5s ease;
 	}
   
@@ -144,7 +144,7 @@
 	}
 	.slidebar {
 	  border-radius: calc(var(--round) - var(--p-y));
-	  background: #5593CB;
+	  background: var(--accent-blue);
 	  transition: transform 0.5s cubic-bezier(0.33, 0.83, 0.99, 0.98),
 		background-color 0.5s ease;
 	}
