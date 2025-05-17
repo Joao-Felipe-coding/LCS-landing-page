@@ -20,13 +20,6 @@
 	font-weight: 700;
 	color: var(--primary-color);
 	text-align: center;
-	opacity: 0;
-	transform: translateX(-60px);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 2s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.contact-title.animate {
-	opacity: 1;
-	transform: translateX(0);
 }
 .contact-subtitle {
 	margin: 1rem 0 4rem 0;
@@ -35,14 +28,8 @@
 	color: var(--text-dark);
 	text-align: center;
 	font-weight: 400;
-	opacity: 0;
-	transform: translateX(-60px);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.contact-subtitle.animate {
-	opacity: 1;
-	transform: translateX(0);
-}
+
 
 /* =========================
    FORMULÁRIO DE CONTATO
@@ -60,14 +47,8 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.2rem;
-	opacity: 0;
-	transform: translateX(-10rem);
-	transition: opacity 2s cubic-bezier(0.77, 0, 0.175, 1), transform 2s cubic-bezier(0.77, 0, 0.175, 1);
 }
-.contact-form.animate {
-	opacity: 1;
-	transform: translateX(0);
-}
+
 .contact-form h2 {
 	font-size: 1.3rem;
 	color: var(--primary-color);
@@ -145,13 +126,6 @@ textarea:focus {
 	padding: 1.1rem 1.2rem;
 	text-decoration: none;
 	color: #222;
-	opacity: 0;
-	transform: translateX(-10rem);
-	transition: opacity 1.5s cubic-bezier(0.77, 0, 0.175, 1), transform 1.5s cubic-bezier(0.77, 0, 0.175, 1), background 1s;
-}
-.contact-card.animate {
-	opacity: 1;
-	transform: translateX(0);
 }
 .contact-card:hover {
 	box-shadow: 0 4px 18px 0 rgba(85, 147, 203, 0.1);

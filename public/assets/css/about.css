@@ -96,6 +96,7 @@
 	.about {
 		flex-direction: column;
 		margin: 2rem;
+		min-height: unset;
 	}
 	.text-about {
 		position: static;

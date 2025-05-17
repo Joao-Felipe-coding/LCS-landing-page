@@ -114,12 +114,23 @@
 
     <!-- Serviços -->
     <section class="services" id="Servicos">
-      <h1 class="services-title">Nossos Serviços</h1>
-      <p class="services-subtitle">
-        Na LCS Assessoria, acompanhamos de perto cada caso, buscando sempre a <strong>melhor solução para garantir seus
-          direitos</strong> e <strong>agilizar o recebimento de indenizações e benefícios</strong>. Conheça as áreas em
-        que podemos ajudar você e sua família a conquistar o que é seu por direito.
-      </p>
+
+      <!-- topo serviços -->
+      <div class="services-top">
+        <div class="photo-services">
+          <img src="./public/assets/images/photo-services.png" alt="Serviços">
+        </div>
+        <div class="text-services">
+          <h1 class="services-title">Nossos Serviços</h1>
+          <p class="services-subtitle">
+            Na LCS Assessoria, acompanhamos de perto cada caso, buscando sempre a <strong>melhor solução para garantir
+              seus direitos</strong> e <strong>agilizar o recebimento de indenizações e benefícios</strong>. Conheça as
+            áreas em que podemos ajudar você e sua família a conquistar o que é seu por direito.
+          </p>
+        </div>
+      </div>
+
+      <!-- cards -->
       <div class="services-cards">
         <div class="service-card" id="servico-indenizacoes-transito">
           <!-- Ícone acidente de trânsito -->
@@ -229,27 +240,38 @@
           <input type="checkbox" id="faq1" class="faq-toggle">
           <label for="faq1" class="faq-question">
             <span>Quais serviços a LCS oferece?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20">
+              <polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </label>
           <div class="faq-answer">
-            Oferecemos assessoria para indenizações, benefícios previdenciários, DPVAT, auxílio-acidente e outros serviços relacionados a direitos do cidadão.
+            Oferecemos assessoria para indenizações, benefícios previdenciários, DPVAT, auxílio-acidente e outros
+            serviços relacionados a direitos do cidadão.
           </div>
         </div>
         <div class="faq-item">
           <input type="checkbox" id="faq2" class="faq-toggle">
           <label for="faq2" class="faq-question">
             <span>Como posso entrar em contato?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20">
+              <polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </label>
           <div class="faq-answer">
-            Você pode entrar em contato pelo WhatsApp, Instagram ou e-mail informados na seção de contato e no rodapé do site.
+            Você pode entrar em contato pelo WhatsApp, Instagram ou e-mail informados na seção de contato e no rodapé do
+            site.
           </div>
         </div>
         <div class="faq-item">
           <input type="checkbox" id="faq3" class="faq-toggle">
           <label for="faq3" class="faq-question">
             <span>Preciso pagar para receber uma análise?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20">
+              <polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </label>
           <div class="faq-answer">
             Não! A análise inicial é totalmente gratuita e sem compromisso.
@@ -259,12 +281,15 @@
           <input type="checkbox" id="faq4" class="faq-toggle">
           <label for="faq4" class="faq-question">
             <span>O atendimento é presencial ou online?</span>
-            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20">
+              <polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </label>
           <div class="faq-answer">
             Atendemos apenas online para garantir mais comodidade e agilidade.
+          </div>
         </div>
-      </div>
     </section>
   </main>
 
@@ -304,7 +329,8 @@
             <p>MIT License</p>
           </div>
           <div class="license-desc">
-            Todo o conteúdo (Elementos UI) deste site é publicado sob a <a href="https://opensource.org/license/mit">MIT License</a>
+            Todo o conteúdo (Elementos UI) deste site é publicado sob a <a href="https://opensource.org/license/mit">MIT
+              License</a>
           </div>
         </div>
       </div>
@@ -320,10 +346,10 @@
   <script src="./src/assets/js/main.js"></script>
   <script>
     // FAQ funcional: apenas um aberto por vez
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const toggles = document.querySelectorAll('.faq-toggle');
       toggles.forEach((toggle) => {
-        toggle.addEventListener('change', function() {
+        toggle.addEventListener('change', function () {
           if (this.checked) {
             toggles.forEach((other) => {
               if (other !== this) other.checked = false;
