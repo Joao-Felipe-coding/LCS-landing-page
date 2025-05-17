@@ -13,7 +13,7 @@
   transition: opacity 0.5s;
 }
 #loading-screen img {
-  max-width: 260px;
+  max-width: 150px;
   width: 60vw;
   height: auto;
   margin-bottom: 32px;

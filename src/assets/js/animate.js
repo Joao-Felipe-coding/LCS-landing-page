@@ -24,10 +24,10 @@ function animateAboutSection() {
 
 // Animação dos cards de serviços
 function animateServicesSection() {
-  const cards = document.querySelectorAll('.service-card');
+  const sCards = document.querySelectorAll('.service-card');
   const title = document.querySelector('.services-title');
   const subtitle = document.querySelector('.services-subtitle');
-  if (!cards.length || !title || !subtitle) return;
+  if (!sCards.length || !title || !subtitle) return;
 
   const observer = new window.IntersectionObserver(
     (entries, observer) => {
@@ -38,12 +38,40 @@ function animateServicesSection() {
         }
       }
     },
-    { threshold: 0.2 }
+    { threshold: 0.4 }
   );
 
   observer.observe(title);
   observer.observe(subtitle);
-  for (const card of cards) {
+  for (const card of sCards) {
+    observer.observe(card);
+  }
+}
+
+//Animação da seção contato
+function animateContactSection() {
+  const cCards = document.querySelectorAll('.contact-card');
+  const title = document.querySelector('.contact-title');
+  const cForm = document.querySelector('.contact-form');
+  const subtitle = document.querySelector('.contact-subtitle');
+  if (!cForm || !cCards || !title || !subtitle) return;
+
+  const observer = new window.IntersectionObserver(
+    (entries, observer) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      }
+    },
+    { threshold: 0.4 }
+  );
+
+  observer.observe(title);
+  observer.observe(subtitle);
+  observer.observe(cForm);
+  for (const card of cCards) {
     observer.observe(card);
   }
 }
@@ -52,4 +80,5 @@ function animateServicesSection() {
 document.addEventListener('DOMContentLoaded', () => {
   animateAboutSection();
   animateServicesSection();
+  animateContactSection();
 });

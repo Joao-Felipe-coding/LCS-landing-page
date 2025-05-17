@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/assets/css/loading.css">
   <link rel="stylesheet" href="./public/assets/css/style.css">
   <link rel="stylesheet" href="./public/assets/css/nav-desktop.css">
   <link rel="stylesheet" href="./public/assets/css/nav-mobile.css">
-  <link rel="stylesheet" href="./public/assets/css/loading.css">
   <link rel="stylesheet" href="./public/assets/css/home.css">
+  <link rel="stylesheet" href="./public/assets/css/about.css">
   <link rel="stylesheet" href="./public/assets/css/services.css">
+  <link rel="stylesheet" href="./public/assets/css/contact.css">
+  <link rel="stylesheet" href="./public/assets/css/faq.css">
   <title>LCS</title>
 </head>
 
@@ -17,12 +20,11 @@
   <!-- Tela de Loading -->
   <div id="loading-screen">
     <img class="logo-desktop" src="./public/assets/images/logo.png" alt="Logo LCS" />
-    <img class="logo-mobile" src="./public/assets/images/logo-vertical.png" alt="Logo LCS Vertical" />
+    <img class="logo-mobile" src="./public/assets/images/logo.png" alt="Logo LCS" />
     <div class="loading-bar-container">
       <div class="loading-bar"></div>
     </div>
   </div>
-  <!-- Fim Tela de Loading -->
 
   <!-- Navegação -->
   <nav>
@@ -76,7 +78,7 @@
 
   <!-- Início -->
   <section class="home" id="Inicio">
-    <img class="logo-home" src="./public/assets/images/logo.png" alt="Logo">
+    <img class="logo-home" src="./public/assets/images/logo-horizontal.png" alt="Logo">
     <img class="logo-home-vertical" src="./public/assets/images/logo-vertical.png" alt="Logo Vertical" />
     <div class="scroll-down-indicator">
       <svg class="arrow-down" width="48" height="32" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -113,36 +115,45 @@
     <section class="services" id="Servicos">
       <h1 class="services-title">Nossos Serviços</h1>
       <p class="services-subtitle">
-        Na LCS Assessoria, acompanhamos de perto cada caso, buscando sempre a <strong>melhor solução para garantir seus direitos</strong> e <strong>agilizar o recebimento de indenizações e benefícios</strong>. Conheça as áreas em que podemos ajudar você e sua família a conquistar o que é seu por direito.
+        Na LCS Assessoria, acompanhamos de perto cada caso, buscando sempre a <strong>melhor solução para garantir seus
+          direitos</strong> e <strong>agilizar o recebimento de indenizações e benefícios</strong>. Conheça as áreas em
+        que podemos ajudar você e sua família a conquistar o que é seu por direito.
       </p>
       <div class="services-cards">
         <div class="service-card" id="servico-indenizacoes-transito">
           <!-- Ícone acidente de trânsito -->
-          <img src="https://img.icons8.com/ios-filled/60/000000/car-crash.png" alt="Indenizações Trânsito" class="service-icon">
+          <img src="https://img.icons8.com/ios-filled/60/000000/car-crash.png" alt="Indenizações Trânsito"
+            class="service-icon">
           <h2>Indenização por Acidente de Trânsito</h2>
-          <p>Receba o que é seu por direito em casos de acidentes de trânsito. Atuamos para garantir sua indenização de forma rápida e segura.</p>
+          <p>Receba o que é seu por direito em casos de acidentes de trânsito. Atuamos para garantir sua indenização de
+            forma rápida e segura.</p>
         </div>
         <div class="service-card" id="servico-indenizacoes-trabalho">
           <!-- Ícone acidente de trabalho -->
           <img src="./public/assets/images/trabalhando.png" alt="Indenizações Trabalho" class="service-icon">
           <h2>Indenização por Acidente de Trabalho</h2>
-          <p>Especialistas em garantir indenizações para acidentes ocorridos no ambiente de trabalho, protegendo seus direitos.</p>
+          <p>Especialistas em garantir indenizações para acidentes ocorridos no ambiente de trabalho, protegendo seus
+            direitos.</p>
         </div>
         <div class="service-card" id="servico-indenizacoes-lazer">
           <!-- Ícone lazer -->
-          <img src="https://img.icons8.com/ios-filled/60/000000/bicycle.png" alt="Indenizações Lazer" class="service-icon">
+          <img src="https://img.icons8.com/ios-filled/60/000000/bicycle.png" alt="Indenizações Lazer"
+            class="service-icon">
           <h2>Indenização por Acidente no Lazer</h2>
-          <p>Atendimento dedicado para casos de acidentes em momentos de lazer, assegurando sua compensação financeira.</p>
+          <p>Atendimento dedicado para casos de acidentes em momentos de lazer, assegurando sua compensação financeira.
+          </p>
         </div>
         <div class="service-card" id="servico-auxilio-acidente">
           <!-- Ícone auxílio-acidente -->
           <img src="./public/assets/images/acidente.png" alt="Auxílio-acidente" class="service-icon">
           <h2>Auxílio-acidente</h2>
-          <p>Auxiliamos na obtenção do auxílio-acidente, facilitando o acesso ao benefício e orientando em todo o processo.</p>
+          <p>Auxiliamos na obtenção do auxílio-acidente, facilitando o acesso ao benefício e orientando em todo o
+            processo.</p>
         </div>
         <div class="service-card" id="servico-aposentadoria-invalidez">
           <!-- Ícone aposentadoria por invalidez -->
-          <img src="https://img.icons8.com/ios-filled/60/000000/wheelchair.png" alt="Aposentadoria por Invalidez" class="service-icon">
+          <img src="https://img.icons8.com/ios-filled/60/000000/wheelchair.png" alt="Aposentadoria por Invalidez"
+            class="service-icon">
           <h2>Aposentadoria por Invalidez</h2>
           <p>Suporte completo para garantir sua aposentadoria por invalidez, com agilidade e transparência.</p>
         </div>
@@ -150,31 +161,177 @@
           <!-- Ícone seguro DPVAT -->
           <img src="./public/assets/images/dpvat.png" alt="Seguro DPVAT" class="service-icon">
           <h2>Seguro DPVAT</h2>
-          <p>Assessoria para acionar o seguro DPVAT, mesmo em casos de negativa, garantindo seu direito ao benefício.</p>
+          <p>Assessoria para acionar o seguro DPVAT, mesmo em casos de negativa, garantindo seu direito ao benefício.
+          </p>
         </div>
         <div class="service-card" id="servico-seguro-vida">
           <!-- Ícone seguro de vida -->
-          <img src="https://img.icons8.com/ios-filled/60/000000/family--v1.png" alt="Seguro de Vida" class="service-icon">
+          <img src="https://img.icons8.com/ios-filled/60/000000/family--v1.png" alt="Seguro de Vida"
+            class="service-icon">
           <h2>Seguro de Vida</h2>
-          <p>Conte com nossa experiência para acionar o seguro de vida e receber o que é seu, com atendimento humanizado.</p>
+          <p>Conte com nossa experiência para acionar o seguro de vida e receber o que é seu, com atendimento
+            humanizado.</p>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
     <section class="contact" id="Contato">
-
+      <h1 class="contact-title">Vamos conversar!</h1>
+      <p class="contact-subtitle">
+        Entre em contato conosco e descubra como nossa equipe pode ajudar você de forma ágil e personalizada.
+      </p>
+      <div class="contact-content">
+        <form class="contact-form" id="form-contato" autocomplete="off">
+          <h2>Envie sua mensagem</h2>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar</button>
+          <div class="form-success" style="display:none;">Mensagem enviada com sucesso!</div>
+        </form>
+        <div class="contact-cards">
+          <a class="contact-card" href="https://wa.me/554399999999" target="_blank" rel="noopener" title="WhatsApp">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
+              class="contact-icon">
+            <p>(43) 99999-9999</p>
+          </a>
+          <a class="contact-card" href="https://instagram.com/seuinstagram" target="_blank" rel="noopener"
+            title="Instagram">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
+              class="contact-icon">
+            <p>@seuinstagram</p>
+          </a>
+          <a class="contact-card" href="mailto:seuemail@dominio.com" title="E-mail">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="E-mail"
+              class="contact-icon">
+            <p>seuemail@dominio.com</p>
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ -->
     <section class="faq" id="FAQ">
-
+      <h1 class="faq-title">FAQ</h1>
+      <div class="faq-list">
+        <div class="faq-item">
+          <input type="checkbox" id="faq1" class="faq-toggle">
+          <label for="faq1" class="faq-question">
+            <span>Quais serviços a LCS oferece?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </label>
+          <div class="faq-answer">
+            Oferecemos assessoria para indenizações, benefícios previdenciários, DPVAT, auxílio-acidente e outros serviços relacionados a direitos do cidadão.
+          </div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq2" class="faq-toggle">
+          <label for="faq2" class="faq-question">
+            <span>Como posso entrar em contato?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </label>
+          <div class="faq-answer">
+            Você pode entrar em contato pelo WhatsApp, Instagram ou e-mail informados na seção de contato e no rodapé do site.
+          </div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq3" class="faq-toggle">
+          <label for="faq3" class="faq-question">
+            <span>Preciso pagar para receber uma análise?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </label>
+          <div class="faq-answer">
+            Não! A análise inicial é totalmente gratuita e sem compromisso.
+          </div>
+        </div>
+        <div class="faq-item">
+          <input type="checkbox" id="faq4" class="faq-toggle">
+          <label for="faq4" class="faq-question">
+            <span>O atendimento é presencial ou online?</span>
+            <svg class="faq-arrow" width="20" height="20" viewBox="0 0 20 20"><polyline points="6 8 10 12 14 8" fill="none" stroke="#006c34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </label>
+          <div class="faq-answer">
+            Atendemos apenas online para garantir mais comodidade e agilidade.
+        </div>
+      </div>
     </section>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col footer-logo">
+        <img src="./public/assets/images/logo-horizontal.png" alt="Logo LCS">
+        <p>LCS | LCS Assessoria, Indenização e Benefícios</p>
+      </div>
+      <div class="footer-col footer-contacts">
+        <h3 class="footer-contacts-title">Contatos</h3>
+        <div class="footer-contact-item">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
+            class="footer-contact-icon">
+          <span>(43) 99999-9999</span>
+        </div>
+        <div class="footer-contact-item">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
+            class="footer-contact-icon">
+          <span>@seuinstagram</span>
+        </div>
+        <div class="footer-contact-item">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg" alt="E-mail"
+            class="footer-contact-icon">
+          <span>seuemail@dominio.com</span>
+        </div>
+      </div>
+      <div class="footer-col footer-social-license">
+        <div class="footer-license">
+          <div class="license-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="none"
+              stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <path
+                d="M12 2v1.75M16 21h-4m-4 0h4m9-16a4.821 4.821 0 0 1-4.055.12l-1.583-.68A8.532 8.532 0 0 0 12 3.75M3 5a4.821 4.821 0 0 0 4.055.12l1.583-.68A8.532 8.532 0 0 1 12 3.75M12 21V3.75m7 1.75-2.892 6.145a3.196 3.196 0 1 0 5.784 0L19 5.5Zm-14 0-2.892 6.145a3.196 3.196 0 1 0 5.784 0L5 5.5Z">
+              </path>
+            </svg>
+            <p>MIT License</p>
+          </div>
+          <div class="license-desc">
+            Todo o conteúdo (Elementos UI) deste site é publicado sob a <a href="https://opensource.org/license/mit">MIT License</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">
+        <p>&copy; 2025 Studio Ascend. Todos os direitos reservados. - LCS Assessoria.</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="./src/assets/js/loading.js"></script>
   <script src="./src/assets/js/nav.js"></script>
   <script src="./src/assets/js/animate.js"></script>
+  <script src="./src/assets/js/main.js"></script>
+  <script>
+    // FAQ funcional: apenas um aberto por vez
+    document.addEventListener('DOMContentLoaded', function() {
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach((toggle) => {
+        toggle.addEventListener('change', function() {
+          if (this.checked) {
+            toggles.forEach((other) => {
+              if (other !== this) other.checked = false;
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
