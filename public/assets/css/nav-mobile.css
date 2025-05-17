@@ -174,4 +174,8 @@
 		transform-origin: bottom right;
 		transform: translateY(calc(var(--transform) * -1)) rotate(45deg);
 	}
+	/* Garante que o checkbox do menu mobile fique sempre invisível */
+	.nav-mobile > .inp {
+		display: none !important;
+	}
 }
