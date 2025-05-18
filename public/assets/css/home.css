@@ -13,10 +13,6 @@
 }
 
 @media (max-width: 520px) {
-	.home {
-		min-height: 100dvh;
-		padding-bottom: 1.5rem;
-	}
 	.logo-home { display: none; }
 	.logo-home-vertical {
 		display: block;
