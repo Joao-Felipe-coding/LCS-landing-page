@@ -202,7 +202,7 @@ footer hr {
   .footer-content {
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem; /* Reduzido para diminuir o espaçamento entre as colunas no mobile */
   }
   .footer-col {
     align-items: center;
@@ -233,12 +233,27 @@ footer hr {
     padding-right: 0.2rem;
   }
   .footer-content {
-    padding: 2rem 0.5rem 1rem 0.5rem;
-    margin: 0 0.5rem auto;
-    border-radius: 18px 18px 0 0;
+    padding: 1.2rem 0.5rem 0.7rem 0.5rem;
+    margin: 0 0.2rem auto;
+    border-radius: 14px 14px 0 0;
+    gap: 0.3rem;
+  }
+  .footer-col {
+    min-width: 0;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .footer-license {
+    max-width: 100%;
+    font-size: 12px;
+    gap: 0.3rem;
   }
   .footer-logo img {
-    width: 120px;
+    width: 100px;
+  }
+  .footer-text {
+    font-size: 11px;
+    margin-top: 1.2rem;
   }
 }
 

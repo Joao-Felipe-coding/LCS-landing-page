@@ -1,13 +1,13 @@
 // FAQ funcional: apenas um aberto por vez
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('DOMContentLoaded', () => {
   const toggles = document.querySelectorAll('.faq-toggle');
-  toggles.forEach((toggle) => {
-    toggle.addEventListener('change', function() {
-      if (this.checked) {
+  for (const toggle of toggles) {
+    toggle.addEventListener('change', (event) => {
+      if (event.target.checked) {
         for (const other of toggles) {
-          if (other !== this) other.checked = false;
+          if (other !== event.target) other.checked = false;
         }
       }
     });
-  });
+  }
 });

@@ -98,8 +98,6 @@ textarea:focus {
 	font-weight: 600;
 	cursor: pointer;
 	transition: background 0.6s, color 0.6s, box-shadow 0.6s;
-	margin-top: 0.5rem;
-	margin-bottom: -3rem;
 }
 .btn-enviar:hover {
 	color: var(--white);
@@ -156,7 +154,6 @@ textarea:focus {
 	}
 	.contact-form {
 		min-width: unset;
-		max-width: 55vw;
 		width: 100%;
 		margin-bottom: 2rem;
 		padding: 1.2rem 0.7rem;
@@ -190,14 +187,15 @@ textarea:focus {
 		gap: 0.7rem;
 	}
 	.contact-title {
-		font-size: 1.13rem;
+		font-size: 1.5rem;
 		padding: 0 0.2rem;
 		margin-bottom: 0.3rem;
+		margin-top: 7rem;
 	}
 	.contact-subtitle {
-		font-size: 1.01rem;
+		font-size: 1rem;
 		padding: 0 0.2rem;
-		margin: 0 0 0.7rem 0;
+		margin: 0 0 3rem 0;
 	}
 	.contact-form {
 		padding: 0.9rem 0.7rem;
@@ -212,10 +210,5 @@ textarea:focus {
 		padding: 0.6rem 0.2rem;
 		border-radius: 8px;
 		font-size: 0.99rem;
-	}
-	.btn-enviar {
-		font-size: 0.97rem;
-		padding: 0.5rem 0;
-		margin-bottom: -1.2rem;
 	}
 }

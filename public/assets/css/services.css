@@ -162,7 +162,7 @@
 	}
 	.text-services {
 		position: static;
-		width: 100%;
+		width: 90%;
 		height: auto;
 		border-radius: 18px;
 		margin: 0;
@@ -185,7 +185,7 @@
 	}
 	.text-services p,
 	.text-services .services-subtitle {
-		font-size: 12px;
+		font-size: 14px;
 		margin-bottom: 1rem;
 		text-align: left;
 	}
@@ -209,12 +209,12 @@
 	}
 	.text-services h1,
 	.text-services .services-title {
-		font-size: 1.18rem;
+		font-size: 2rem;
 		margin-bottom: 0.6rem;
 	}
 	.text-services p,
 	.text-services .services-subtitle {
-		font-size: 1.01rem;
+		font-size: 1.3rem;
 		margin-bottom: 0.7rem;
 	}
 	.services-cards {

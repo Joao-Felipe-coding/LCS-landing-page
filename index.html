@@ -344,21 +344,6 @@
   <script src="./src/assets/js/nav.js"></script>
   <script src="./src/assets/js/animate.js"></script>
   <script src="./src/assets/js/main.js"></script>
-  <script>
-    // FAQ funcional: apenas um aberto por vez
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggles = document.querySelectorAll('.faq-toggle');
-      toggles.forEach((toggle) => {
-        toggle.addEventListener('change', function () {
-          if (this.checked) {
-            toggles.forEach((other) => {
-              if (other !== this) other.checked = false;
-            });
-          }
-        });
-      });
-    });
-  </script>
 </body>
 
 </html>
