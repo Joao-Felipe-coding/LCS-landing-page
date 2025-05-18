@@ -3,13 +3,21 @@
    Estilos para a seção inicial do site
 ========================= */
 .home {
-	background: linear-gradient(
-			to bottom,
-			rgba(0, 0, 0, 0.055) 10%,
-			rgba(0, 0, 0, 0.219) 70%,
-			rgba(0, 0, 0, 0.875) 100%
-		), url(../images/photo-bg.png) no-repeat center center / cover;
+	position: relative;
 	min-height: 100dvh; /* Altura dinâmica para mobile moderno */
+	overflow: hidden;
+}
+
+.home-bg-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+	pointer-events: none;
+	user-select: none;
 }
 
 @media (max-width: 520px) {
