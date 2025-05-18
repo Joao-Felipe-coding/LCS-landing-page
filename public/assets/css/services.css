@@ -8,7 +8,7 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	min-height: 80vh;
+	min-height: 40vh;
 }
 
 /* =========================
@@ -31,6 +31,7 @@
 	width: 50%;
 	min-width: 220px;
 	height: 80%;
+	max-height: 20vw;
 	overflow-wrap: break-word;
 	word-break: break-word;
 	opacity: 0;
@@ -40,7 +41,7 @@
 }
 
 .services-title {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: 700;
 	color: var(--primary-color);
 	margin-bottom: 1.5rem;
@@ -48,8 +49,7 @@
 .services-subtitle {
 	line-height: 1.5;
 	color: var(--text-strong);
-	margin-bottom: 2rem;
-	font-size: 20px;
+	font-size: 18px;
 	overflow-wrap: break-word;
 	word-break: break-word;
 }
@@ -63,6 +63,7 @@
 	margin: 5rem 0 0 0;
 	width: 50vw;
 	height: 80%;
+	max-height: 20vw;
 	opacity: 0;
 }
 .photo-services.animate {
