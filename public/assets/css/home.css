@@ -15,6 +15,12 @@
 	z-index: 1;
 }
 
+@media (max-width: 900px) {
+	.home {
+		background-attachment: scroll !important;
+	}
+}
+
 /* =========================
    LOGO E ANIMAÇÕES
 ========================= */
