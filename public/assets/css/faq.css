@@ -76,17 +76,18 @@
 ========================= */
 @media (max-width: 600px) {
 	.faq {
-		padding: 2rem 0.3rem;
+		padding: 1.2rem 0.1rem;
+		margin: 2rem 0 1.5rem 0;
 	}
 	.faq-title {
-		font-size: 1.4rem;
+		font-size: 1.13rem;
 	}
 	.faq-question {
-		font-size: 1rem;
-		padding: 1rem 1rem;
+		font-size: 1.01rem;
+		padding: 0.7rem 0.7rem;
 	}
 	.faq-answer {
-		font-size: 0.97rem;
-		padding: 0 1rem;
+		font-size: 0.99rem;
+		padding: 0 0.7rem;
 	}
 }

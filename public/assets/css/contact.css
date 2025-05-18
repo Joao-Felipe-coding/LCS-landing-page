@@ -186,40 +186,36 @@ textarea:focus {
 }
 @media (max-width: 520px) {
 	.contact-content {
-		margin: 1rem;
-		gap: 1.2rem;
+		margin: 0.7rem;
+		gap: 0.7rem;
 	}
 	.contact-title {
-		font-size: 1.1rem;
-		padding: 0 0.3rem;
-		margin-bottom: 0.5rem;
+		font-size: 1.13rem;
+		padding: 0 0.2rem;
+		margin-bottom: 0.3rem;
 	}
 	.contact-subtitle {
-		font-size: 0.97rem;
-		padding: 0 0.3rem;
-		margin: 0 0 1.2rem 0;
+		font-size: 1.01rem;
+		padding: 0 0.2rem;
+		margin: 0 0 0.7rem 0;
 	}
 	.contact-form {
-		padding: 1rem 1rem;
-		border-radius: 12px;
-		min-width: unset;
-		max-width: 100vw;
-		width: 100%;
+		padding: 0.9rem 0.7rem;
+		border-radius: 10px;
+		font-size: 1.05rem;
 	}
 	.contact-cards {
-		gap: 0.7rem;
-		width: 100%;
-		margin-top: 0.5rem;
+		gap: 0.5rem;
+		margin-top: 0.2rem;
 	}
 	.contact-card {
-		padding: 0.7rem 0.3rem;
-		border-radius: 10px;
-		font-size: 0.97rem;
-		max-width: 100vw;
+		padding: 0.6rem 0.2rem;
+		border-radius: 8px;
+		font-size: 0.99rem;
 	}
 	.btn-enviar {
-		font-size: 0.9rem;
-		padding: 0.6rem 0;
-		margin-bottom: -2rem;
+		font-size: 0.97rem;
+		padding: 0.5rem 0;
+		margin-bottom: -1.2rem;
 	}
 }

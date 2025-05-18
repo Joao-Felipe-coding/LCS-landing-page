@@ -21,6 +21,28 @@
 	}
 }
 
+@media (max-width: 520px) {
+	.home {
+		min-height: 100dvh;
+		padding-bottom: 1.5rem;
+	}
+	.logo-home { display: none; }
+	.logo-home-vertical {
+		display: block;
+		margin: auto;
+		padding-top: 12vw;
+		max-width: 80vw;
+		opacity: 0;
+		animation: logoVerticalFadeIn 2s forwards;
+		animation-delay: 4s;
+		z-index: 2;
+	}
+	@keyframes logoVerticalFadeIn {
+		from { opacity: 0; transform: translateX(0); }
+		to { opacity: 1; transform: translateX(0); }
+	}
+}
+
 /* =========================
    LOGO E ANIMAÇÕES
 ========================= */
@@ -47,7 +69,7 @@
 	.logo-home-vertical {
 		display: block;
 		margin: auto;
-		padding-top: 20%;
+		padding-top: 22vw;
 		max-width: 60vw;
 		opacity: 0;
 		animation: logoVerticalFadeIn 2s forwards;
@@ -103,7 +125,12 @@
 	50% { opacity: 1; }
 }
 @media (max-width: 520px) {
-	.scroll-down-indicator { bottom: 8px; }
-	.arrow-down { width: 36px; height: 24px; }
-	.scroll-text { font-size: 0.95rem; }
+	.scroll-down-indicator { bottom: 2px; }
+	.arrow-down {
+		width: 32px;
+		height: 20px;
+	}
+	.scroll-text {
+		font-size: 1.08rem;
+	}
 }

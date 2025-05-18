@@ -144,11 +144,8 @@
 	.photo-about {
 		position: static;
 		margin: 0 0 -1.5rem 0;
-		width: 90vw;
-		max-width: 340px;
-		height: 48vw;
-		min-height: 140px;
-		max-height: 220px;
+		width: 100vw;
+		height: 20vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -166,7 +163,7 @@
 	.text-about {
 		position: static;
 		margin: 0 1rem;
-		width: 90vw;
+		width: 100vw;
 		max-width: 340px;
 		padding: 1.2rem 1rem;
 		border-radius: 16px;
