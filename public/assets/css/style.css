@@ -66,10 +66,6 @@ body::-webkit-scrollbar {
 /* =========================
    LAYOUT PRINCIPAL
 ========================= */
-.main-container {
-	z-index: 3;
-	background: var(--background-color);
-}
 
 .about,
 .services,

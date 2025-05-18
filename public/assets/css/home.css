@@ -10,9 +10,6 @@
 			rgba(0, 0, 0, 0.875) 100%
 		), url(../images/photo-bg.png) no-repeat center center / cover;
 	min-height: 100dvh; /* Altura dinâmica para mobile moderno */
-	position: relative;
-	background-attachment: scroll;
-	z-index: 1;
 }
 
 @media (max-width: 900px) {
@@ -35,7 +32,6 @@
 		opacity: 0;
 		animation: logoVerticalFadeIn 2s forwards;
 		animation-delay: 4s;
-		z-index: 2;
 	}
 	@keyframes logoVerticalFadeIn {
 		from { opacity: 0; transform: translateX(0); }
