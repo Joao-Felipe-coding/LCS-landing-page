@@ -12,12 +12,6 @@
 	min-height: 100dvh; /* Altura dinâmica para mobile moderno */
 }
 
-@media (max-width: 900px) {
-	.home {
-		background-attachment: scroll !important;
-	}
-}
-
 @media (max-width: 520px) {
 	.home {
 		min-height: 100dvh;
