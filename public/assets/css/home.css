@@ -11,7 +11,7 @@
 		), url(../images/photo-bg.png) no-repeat center center / cover;
 	min-height: 100dvh; /* Altura dinâmica para mobile moderno */
 	position: relative;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	z-index: 1;
 }
 
