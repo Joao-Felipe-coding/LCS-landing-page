@@ -71,7 +71,8 @@
 		margin: auto;
 		padding-top: 30%;
 		padding-bottom: 20%;
-		max-width: 40vw;
+		max-width: 70vw;
+		position: relative;
 		opacity: 0;
 		animation: logoVerticalFadeIn 2s forwards;
 		animation-delay: 4s;
