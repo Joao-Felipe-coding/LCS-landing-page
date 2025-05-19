@@ -35,7 +35,6 @@
 		display: flex;
 		align-items: center;
 		height: 2.5rem;
-		width: calc(100% - 2rem);
 		position: fixed;
 		top: 1rem;
 		left: 1rem;
@@ -170,6 +169,10 @@
 	}
 	/* Garante que o checkbox do menu mobile fique sempre invisível */
 	.nav-mobile > .inp {
+		display: none !important;
+	}
+	/* Esconde a navbar mobile enquanto o loading está ativo */
+	#loading-screen:not(.hide) ~ nav .nav-mobile {
 		display: none !important;
 	}
 }

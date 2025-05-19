@@ -53,5 +53,4 @@ function animateServicesSection() {
 document.addEventListener('DOMContentLoaded', () => {
   animateAboutSection();
   animateServicesSection();
-  animateContactSection();
 });

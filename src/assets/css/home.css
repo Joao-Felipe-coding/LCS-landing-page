@@ -47,13 +47,12 @@
 }
 @media (max-width: 520px) {
 	.home {
-		min-height: 20vh; /* Altura dinâmica para mobile moderno */
+		min-height: 20vh;
 	}
 
 	.logo-home {
 		display: none;
 	}
-
 	.logo-home-vertical {
 		display: block;
 		margin: auto;
