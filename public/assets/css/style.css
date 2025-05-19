@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Teko");
-
+@import url("../../../src/assets/css/nav-desktop.css");
+@import url("../../../src/assets/css/nav-mobile.css");
+@import url("../../../src/assets/css/about.css");
+@import url("../../../src/assets/css/home.css");
+@import url("../../../src/assets/css/services.css");
+@import url("../../../src/assets/css/contact.css");
+@import url("../../../src/assets/css/faq.css");
 /*
   Arquivo principal de estilos - style.css
   Organização:

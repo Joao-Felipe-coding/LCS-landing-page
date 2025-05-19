@@ -165,6 +165,8 @@
 		position: static;
 		width: 90%;
 		height: auto;
+		max-height: 200vw;
+
 		border-radius: 18px;
 		margin: 0;
 		align-items: flex-start;
