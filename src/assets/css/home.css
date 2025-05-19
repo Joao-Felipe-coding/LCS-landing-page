@@ -3,7 +3,7 @@
    Estilos para a seção inicial do site
 ========================= */
 .home {
-	min-height: 100vh; /* Altura dinâmica para mobile moderno */
+	min-height: 100vh;
 	position: relative;
 }
 
@@ -48,17 +48,6 @@
 @media (max-width: 520px) {
 	.home {
 		min-height: 20vh; /* Altura dinâmica para mobile moderno */
-	}
-
-	.home-bg-img {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 
 	.logo-home {
