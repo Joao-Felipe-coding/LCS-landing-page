@@ -190,11 +190,15 @@
         Entre em contato conosco e descubra como nossa equipe pode ajudar você de forma ágil e personalizada.
       </p>
       <div class="contact-content">
-        <form class="contact-form" id="form-contato" autocomplete="off">
-          <h2>Envie sua mensagem</h2>
+        <form class="contact-form" id="form-contato" action="https://formsubmit.co/your@email.com" method="POST">
+          <h2>Fale Conosco</h2>
           <div class="form-group">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+          </div>
+          <div class="form-group">
+            <label for="numero">Número</label>
+            <input type="text" id="numero" name="numero" required placeholder="(xx) xxxxx-xxxx">
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
@@ -204,8 +208,8 @@
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Como podemos ajudar?"></textarea>
           </div>
+          <input type="hidden" name="_next" value="./thanks.html">
           <button type="submit" class="btn-enviar">Enviar</button>
-          <div class="form-success" style="display:none;">Mensagem enviada com sucesso!</div>
         </form>
         <div class="contact-cards">
           <a class="contact-card" href="https://wa.me/554399999999" target="_blank" rel="noopener" title="WhatsApp">

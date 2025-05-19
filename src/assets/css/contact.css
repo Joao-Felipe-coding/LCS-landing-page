@@ -89,8 +89,8 @@ textarea:focus {
 	outline: none;
 }
 .btn-enviar {
-	background: var(--accent-blue-hover);
-	color: var(--black);
+	background: var(--accent-blue);
+	color: var(--white);
 	border: none;
 	border-radius: 2rem;
 	padding: 0.8rem 0;
@@ -100,8 +100,7 @@ textarea:focus {
 	transition: background 0.6s, color 0.6s, box-shadow 0.6s;
 }
 .btn-enviar:hover {
-	color: var(--white);
-	background-color: var(--accent-green);
+	background-color: var(--accent-blue-hover);
 }
 
 /* =========================
@@ -112,7 +111,7 @@ textarea:focus {
 	flex-direction: column;
 	gap: 1.5rem;
 	width: auto;
-	margin-top: 2rem;
+	margin-top: 5rem;
 }
 .contact-card {
 	gap: 1rem;

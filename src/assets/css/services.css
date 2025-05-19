@@ -140,40 +140,93 @@
 @media (max-width: 970px) {
 	.services-top {
 		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		gap: 2rem;
 		min-height: unset;
-		padding: 1rem 0 0 0;
-	}
-	.text-services,
-	.photo-services {
-		width: 90vw;
-		max-width: 98vw;
-		min-width: 0;
-		height: auto;
-		max-height: 320px;
+		padding: 0;
+		margin: 2rem 0;
 		position: static;
-		margin: 0;
+	}
+	.text-services {
+		position: static;
+		width: 90%;
+		max-width: 100%;
+		min-width: 220px;
+		height: auto;
+		border-radius: 18px;
+		margin: 0 1rem 0 1rem;
+		align-items: flex-start;
 	}
 	.photo-services {
-		height: 180px;
-		margin-bottom: 1.5rem;
+		position: static;
+		margin: 0 1rem -2rem 1rem;
+		width: 100%;
+		max-width: 100%;
+		height: 20vw;
+		min-height: 180px;
+		box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.06);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.photo-services img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 18px;
 	}
 }
-@media (max-width: 520px) {
-	.text-services,
-	.photo-services {
-		width: 98vw;
-		max-width: 100vw;
-		border-radius: 14px;
-	}
 
+@media (max-width: 520px) {
+	.services-top {
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		min-height: unset;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		padding: 0;
+	}
 	.photo-services {
-		margin-bottom: -5rem;
+		position: static;
+		margin: 0 0 -4rem 0;
+		width: 84vw;
+		height: 20vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 1px 8px 0 rgba(0,0,0,0.06);
+		overflow: hidden;
+	}
+	.photo-services img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		border-radius: 16px;
+	}
+	.text-services {
+		position: static;
+		margin: 0 1rem;
+		width: 100vw;
+		max-width: 370px;
+		padding: 1.2rem 1rem;
+		box-shadow: 0 1px 8px 0 rgba(0,0,0,0.06);
+		background: var(--gray-bg2);
+		height: auto;
+		min-width: unset;
+		font-size: 14px;
+		border-radius: 10px;
+		align-items: flex-start;
 	}
 	.services-title {
-		font-size: 1.2rem;
+		font-size: 2rem;
+		margin-bottom: 0.7rem;
 	}
 	.services-subtitle {
-		font-size: 0.98rem;
+		font-size: 1.15rem;
+		margin-bottom: 1rem;
 	}
 }
