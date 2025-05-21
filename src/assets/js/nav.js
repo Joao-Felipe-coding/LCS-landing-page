@@ -6,7 +6,7 @@ function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
     isScrolling = true; // Ativa a flag
-    const offsetTop = section.offsetTop - 80; // Ajuste para navbar
+    const offsetTop = section.offsetTop - 100; // Ajuste para navbar e possível sobreposição do botão do WhatsApp
     window.scrollTo({ top: offsetTop, behavior: 'smooth' });
 
     // Atualiza o rádio correspondente imediatamente
