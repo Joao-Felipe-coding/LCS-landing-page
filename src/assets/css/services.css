@@ -176,6 +176,10 @@
 		object-position: center;
 		border-radius: 18px;
 	}
+
+		.services-title {
+		font-size: 1.5rem;
+	}
 }
 
 @media (max-width: 520px) {
@@ -221,11 +225,7 @@
 		align-items: flex-start;
 	}
 	.services-title {
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin-bottom: 0.7rem;
-	}
-	.services-subtitle {
-		font-size: 1.15rem;
-		margin-bottom: 1rem;
 	}
 }
