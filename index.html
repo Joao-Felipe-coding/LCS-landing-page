@@ -13,6 +13,27 @@
 </head>
 
 <body>
+  <!-- Popup do WhatsApp -->
+  <div class="whatsapp-popup-overlay" id="whatsapp-popup-overlay">
+    <div class="whatsapp-popup">
+      <button class="whatsapp-popup-close" id="whatsapp-popup-close">&times;</button>
+      <div class="whatsapp-popup-header">
+        <div class="whatsapp-popup-icon">
+          <img src="./public/assets/images/whatsapp-icon.png" alt="WhatsApp">
+        </div>
+        <h3 class="whatsapp-popup-title">Atendimento via WhatsApp</h3>
+      </div>
+      <p class="whatsapp-popup-subtitle">Estamos prontos para atender e tirar todas as suas dúvidas!</p>
+      <div class="whatsapp-popup-message">
+        Olá! Gostaria de saber mais sobre os serviços da LCS Assessoria.
+      </div>
+      <button class="whatsapp-popup-btn" id="whatsapp-popup-btn">
+        <img src="./public/assets/images/whatsapp-icon.png" alt="" width="24" height="24">
+        Iniciar conversa
+      </button>
+    </div>
+  </div>
+
   <!-- Tela de Loading -->
   <div id="loading-screen">
     <img class="logo-desktop" src="./public/assets/images/logo.png" alt="Logo LCS" />
@@ -52,7 +73,7 @@
       </div>
     </div>
     <label class="nav-mobile">
-      <a href="https://wa.me/554399999999" class="whatsapp">
+      <a href="#" class="whatsapp">
         <img src="./public/assets/images/whatsapp-icon.png" alt="" width="35" height="35">
         Nosso Whatsapp
       </a>
@@ -212,10 +233,10 @@
           <button type="submit" class="btn-enviar">Enviar</button>
         </form>
         <div class="contact-cards">
-          <a class="contact-card" href="https://wa.me/554998017200" target="_blank" rel="noopener" title="WhatsApp">
+          <a class="contact-card" href="https://wa.me/554991289287" target="_blank" rel="noopener" title="WhatsApp">
             <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
               class="contact-icon">
-            <p>(49) 9801-7200</p>
+            <p>(49) 9128-9287</p>
           </a>
           <a class="contact-card" href="https://instagram.com/lcs.assessoria" target="_blank" rel="noopener"
             title="Instagram">
@@ -304,7 +325,7 @@
         <div class="footer-contact-item">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"
             class="footer-contact-icon">
-          <span>(49) 9801-7200</span>
+          <span>(49) 9128-9287</span>
         </div>
         <div class="footer-contact-item">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
@@ -341,7 +362,7 @@
   </footer>
 
   <!-- Botão flutuante do WhatsApp -->
-  <a href="https://wa.me/554998017200" class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/554991289287" class="whatsapp-float" target="_blank">
     <img src="./public/assets/images/whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
@@ -349,6 +370,7 @@
   <script src="./src/assets/js/nav.js"></script>
   <script src="./src/assets/js/animate.js"></script>
   <script src="./src/assets/js/main.js"></script>
+  <script src="./src/assets/js/whatsapp-popup.js"></script>
 </body>
 
 </html>
